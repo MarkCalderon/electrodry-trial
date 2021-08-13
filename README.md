@@ -6,7 +6,7 @@
 ```
 npm ci
 ```
-3. And finally type the command: to watch assets, start the server and open the browser.
+3. And finally type the command below to watch assets, start the server and open the browser.
 ```
 npm run serve
 ```
