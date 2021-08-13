@@ -1,0 +1,72 @@
+.contactSec {
+    $this: &;
+    background-color: $black;
+
+    &__inner {
+        padding: 65px 0 81px;
+    }
+
+    &__innerTitleText {
+        font: 600 55px/1.1 $OpenSans;
+        color: $yellow;
+        text-align: center;
+
+    }
+    
+    &__innerParaText {
+        margin-top: 22px;
+        font: 300 18px/1.6 $OpenSans;
+        color: $white;
+        text-align: center;
+    }
+
+    &__innerFormInputCont {
+        margin: 41px auto 0;
+        width: 100%;
+        max-width: 603px;
+        position: relative;
+        border-bottom: 2px solid $yellow;
+    }
+
+    &__innerFormInputIconArea {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 46px;
+        height: 46px;
+    }
+
+    &__innerFormButtonCont {
+        @include u-flex($jc: center);
+    }
+
+    &__innerFormInputText {
+        padding-left: 50px;
+        height: 58px;
+        font: bold 18px/1.5 $OpenSans;
+        border: 0;
+        outline: 0;
+        background: 0;
+        color: $white;
+
+        &::placeholder {
+            color: $grey;
+        }
+    }
+
+    &__innerFormInputSubmit {
+        margin-top: 52px;
+        width: 100%;
+        max-width: 148px;
+        height: 48px;
+        transition: .5s ease;
+        background-color: $yellow;
+        border-radius: 4px;
+        @include u-flex($ai: center, $jc: center);
+        font: 100 12px/1.5 $OpenSans;
+        text-align: center;
+
+        
+    }
+}

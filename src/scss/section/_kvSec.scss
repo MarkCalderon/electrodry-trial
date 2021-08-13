@@ -1,0 +1,36 @@
+.kvSec {
+  $this: &;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../img/kvSec_bg.png');
+  height: 750px;
+
+  &__inner {
+    padding-top: 215px;
+    margin: auto;
+    max-width: 1081px;
+  }
+
+  &__innerMainText {
+    font: bold 75px/1.1 $OpenSans;
+    color: $white;
+  }
+
+  &__innerParaText {
+    margin-top: 4px;
+    font: 300 22px/1.5 $OpenSans;
+    color: $white;
+  }
+
+  &__innerAnchor {
+    margin-top: 42px;
+    width: 100%;
+    max-width: 148px;
+    height: 48px;
+    transition: .5s ease;
+    background-color: $yellow;
+    @include u-flex($ai: center, $jc: center);
+    font: bold 12px/1.5 $OpenSans;
+  }
+}

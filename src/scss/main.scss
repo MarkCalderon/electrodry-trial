@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+$OpenSans: 'Open Sans', sans-serif;
+
+// Variables
+
+$white: #fff;
+$black: #000;
+$yellow: #FFCD3F;
+$grey: #919191;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: $OpenSans;
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+button {
+    border: 0;
+    outline: 0;
+}
+
+// MIXINS
+@mixin u-flex($jc: space-between, $ai: stretch, $fw: row wrap, $fd: '') {
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    flex-flow: $fw;
+    @if $fd != '' {
+        flex-direction: $fd;
+    }
+}
+
+@import './modules/header';
+@import './modules/footer';
+@import './section/kvSec';
+@import './section/introSec';
+@import './section/storySec';
+@import './section/faqSec';
+@import './section/contactSec';

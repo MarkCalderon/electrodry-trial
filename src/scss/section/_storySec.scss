@@ -1,0 +1,52 @@
+.storySec {
+    $this: &;
+
+    &__inner {
+        @include u-flex;
+        min-height: 757px;
+    }
+
+    &__innerLeft {
+        width: 49.54%;
+        background-image: url('../img/storySec_bg-01.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__innerRight {
+        width: 50.46%;
+        background-image: url('../img/storySec_bg-02.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include u-flex($ai: center);
+    }
+
+    &__innerRightInner {
+        max-width: 475px;
+        padding: 15px 15px 0 69px;
+      }
+    
+      &__innerRightInnerText {
+        font: 600 55px/1.1 $OpenSans;
+        color: $yellow;
+      }
+    
+      &__innerRightParaText {
+        margin-top: 25px;
+        font: 300 18px/1.6 $OpenSans;
+        color: $white;
+      }
+    
+      &__innerRightAnchor {
+        margin-top: 50px;
+        width: 100%;
+        max-width: 148px;
+        height: 48px;
+        transition: .5s ease;
+        background-color: $yellow;
+        @include u-flex($ai: center, $jc: center);
+        font: bold 12px/1.5 $OpenSans;
+      }
+}

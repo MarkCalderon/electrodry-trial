@@ -1,0 +1,27 @@
+.footerSec {
+    $this: &;
+
+    &__inner {
+
+    }
+
+    &__innerTop {
+        @include u-flex;
+    }
+
+    &__innerLeft {
+
+    }
+
+    &__innerLeftFigureArea {
+        max-width: 228px;
+    }
+
+    &__innerRight {
+        @include u-flex;
+    }
+
+    &__innerList {
+        @include u-flex($fd: column);
+    }
+}

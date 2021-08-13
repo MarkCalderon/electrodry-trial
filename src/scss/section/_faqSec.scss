@@ -1,0 +1,54 @@
+.faqSec {
+    $this: &;
+
+    &__inner {
+        padding: 74px 0 150px;
+        margin: auto;
+        max-width: 1081px;
+      }
+    
+      &__circle {
+        margin: auto;
+        display: block;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        background-color: $yellow;
+      }
+
+      &__titleText {
+        margin-top: 13px;
+        font: 600 55px/1.1 $OpenSans;
+        text-align: center;
+      }
+    
+      &__paraText {
+        margin-top: 13px;
+        font: 300 18px/1.6 $OpenSans;
+        text-align: center;
+      }
+
+      &__accordionList {
+          margin: 59px auto 0;
+          max-width: 1021px;
+      }
+
+      &__accordionItem {
+          @include u-flex($ai: center);
+          border-bottom: 2px solid $yellow;
+          min-height: 48px;
+      }
+
+      &__accordionItemText {
+          font: 300 21px/1.5 $OpenSans;
+      }
+
+      &__accordionItemButton {
+        width: 26px;
+        height: 26px;
+        background-image: url('../img/icon_plus.png');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+}
