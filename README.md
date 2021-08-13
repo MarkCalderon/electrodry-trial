@@ -12,7 +12,7 @@ The criteria includes the accuracy, speed and quality of code.
 
 ## How to run in a local environment:
 
-1. Open a terminal on the project directory
+1. Open a terminal and navigate towards the project directory
 2. Type the code below to install the necessary dependencies
 ```
 npm ci
